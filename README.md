@@ -90,6 +90,7 @@ There is a file called "hostname". This is where the TOR stores the URL name for
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/8527b1bf-3733-4f8c-a6ef-f32a8b4d4d84)
 
 Step – 6: Download the executable file of TOR browser from the official website and run it. 
+
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/df278c9a-5fdd-4da9-8ee3-a7aae5b8b9f1)
 
 Type in this URL onto the TOR browser.
