@@ -1,7 +1,7 @@
 # Hosting and analysis of TOR network 
 This is a team project (2) which we worked on hosting and analysing the TOR network during my Masters second semester. 
 
-## Anonymising network traffic using Proxychains:
+## ---------------------- Anonymising network traffic using Proxychains -----------------------
 
 Step - 1 : Installing proxychains:
 
@@ -40,20 +40,25 @@ DNS leaks can occur as a result of incorrectly configured VPN or proxy settings,
 
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/18613c1c-58d4-45a9-b9ac-e038f8ffbb2c)
 
-## Hosting a TOR onion website
+## ---------------------------------- Hosting a TOR onion website ----------------------------------
 
 Step - 1: Open a terminal window on Kali Linux Install Tor by running the following command:
 
 ``` $ sudo apt-get install tor ```
+
 Once Tor is installed, we can check its status by running the following command:
 ``` $ sudo service tor status ```
+
 To automatically launch Tor when Kali Linux starts up, we can add the following command in our system's startup programs:
 ``` $ sudo systemctl enable tor.service ```
+
 This will add the Tor service to the list of services that start up when Kali Linux boots. Also, we can start the Tor service manually by running the following command:
 ``` $ sudo systemctl start tor.service ```
+
 Once the service is started, we can use the Tor browser to access .onion sites and browse the web anonymously.
 
 Step - 2: Traverse to /var/lib/tor/hidden_service and uncomment the two lines present in the location-hidden services. 
+
 HiddenServiceDir /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:8080 // Here, we are binding the port 8080
 
@@ -61,6 +66,7 @@ HiddenServicePort 80 127.0.0.1:8080 // Here, we are binding the port 8080
 
 Step – 3: Start the TOR service. This can be performed just by a simple command.
 ``` $ sudo service tor start  ```
+
 ``` $ sudo service tor status ```
 
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/42b322da-eb12-429c-9de6-1f746ecfeb28)
@@ -73,7 +79,9 @@ Step – 4: Start running the in-built python’s HTTP server and bind the IP an
 
 Step - 5: But we must have an address to access the site. This can be found in /var/lib/tor/hidden_service folder. Open the hostname by using the “cat” command.
 Traverse to this path! 
+
 ``` $ cd /var/lib/tor/hidden_service  ```
+
 There is a file called "hostname". This is where the TOR stores the URL name for your hidden website service. 
 
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/8527b1bf-3733-4f8c-a6ef-f32a8b4d4d84)
