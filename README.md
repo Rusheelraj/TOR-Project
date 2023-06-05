@@ -47,12 +47,15 @@ Step - 1: Open a terminal window on Kali Linux Install Tor by running the follow
 ``` $ sudo apt-get install tor ```
 
 Once Tor is installed, we can check its status by running the following command:
+
 ``` $ sudo service tor status ```
 
 To automatically launch Tor when Kali Linux starts up, we can add the following command in our system's startup programs:
+
 ``` $ sudo systemctl enable tor.service ```
 
 This will add the Tor service to the list of services that start up when Kali Linux boots. Also, we can start the Tor service manually by running the following command:
+
 ``` $ sudo systemctl start tor.service ```
 
 Once the service is started, we can use the Tor browser to access .onion sites and browse the web anonymously.
