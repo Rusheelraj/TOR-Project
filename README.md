@@ -11,7 +11,9 @@ Step - 1 : Installing proxychains:
 
 Step - 2: Configuration of proxychains:
 Navigate to the /etc folder and open the proxychains4.conf file to edit the configuration changes. Uncomment the type of chaining needed for the proxychains. In our case, we want to test it on dynamic chains.
+
 #dynamic_chain -> dynamic_chain
+
 ``` socks5 127.0.0.1 9050 ```
 
 Step - 3: Once the configuration changes are done, open a new terminal window and start the proxchains with a web-browser as well as a website we want to connect.
