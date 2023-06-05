@@ -5,9 +5,9 @@ This is a team project (2) which we worked on hosting and analysing the TOR netw
 
 Step - 1 : Installing proxychains:
 
-``` sudo apt install proxychains ```
+``` $ sudo apt install proxychains ```
 
-``` sudo apt install proxychains4 ```
+``` $ sudo apt install proxychains4 ```
 
 Step - 2: Configuration of proxychains:
 Navigate to the /etc folder and open the proxychains4.conf file to edit the configuration changes. Uncomment the type of chaining needed for the proxychains. In our case, we want to test it on dynamic chains.
@@ -44,11 +44,11 @@ Step - 1: Open a terminal window on Kali Linux Install Tor by running the follow
 
 ``` $ sudo apt-get install tor ```
 Once Tor is installed, we can check its status by running the following command:
-``` $sudo service tor status ```
+``` $ sudo service tor status ```
 To automatically launch Tor when Kali Linux starts up, we can add the following command in our system's startup programs:
-``` $sudo systemctl enable tor.service ```
+``` $ sudo systemctl enable tor.service ```
 This will add the Tor service to the list of services that start up when Kali Linux boots. Also, we can start the Tor service manually by running the following command:
-``` $sudo systemctl start tor.service ```
+``` $ sudo systemctl start tor.service ```
 Once the service is started, we can use the Tor browser to access .onion sites and browse the web anonymously.
 
 Step - 2: Traverse to /var/lib/tor/hidden_service and uncomment the two lines present in the location-hidden services. 
@@ -71,7 +71,7 @@ Step – 4: Start running the in-built python’s HTTP server and bind the IP an
 
 Step - 5: But we must have an address to access the site. This can be found in /var/lib/tor/hidden_service folder. Open the hostname by using the “cat” command.
 Traverse to this path! 
-●	$ cd /var/lib/tor/hidden_service 
+``` $ cd /var/lib/tor/hidden_service  ```
 There is a file called "hostname". This is where the TOR stores the URL name for your hidden website service. 
 
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/8527b1bf-3733-4f8c-a6ef-f32a8b4d4d84)
