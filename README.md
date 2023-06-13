@@ -1,7 +1,7 @@
 # Hosting and analysis of TOR network 
 This is a team project (2) which we worked on hosting and analysing the TOR network during my Masters second semester. 
 
-## ---------------------- Anonymising network traffic using Proxychains -----------------------
+## ----------- Anonymising network traffic using Proxychains --------------
 
 Step - 1 : Installing proxychains:
 
@@ -40,7 +40,7 @@ DNS leaks can occur as a result of incorrectly configured VPN or proxy settings,
 
 ![image](https://github.com/Rusheelraj/TOR-Project/assets/30828807/18613c1c-58d4-45a9-b9ac-e038f8ffbb2c)
 
-## ---------------------------------- Hosting a TOR onion website ----------------------------------
+## -------------- Hosting a TOR onion website ------------------
 
 Step - 1: Open a terminal window on Kali Linux Install Tor by running the following command:
 
